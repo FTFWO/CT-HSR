@@ -1,6 +1,6 @@
 # **Cascade Transformer for Hierarchical Semantic Reasoning in Text-based VQA**
 
-[Download PDF](https://github.com/FTFWO/CT-HSR/blob/main/Cascade%20Transformer%20for%20Hierarchical%20Semantic%20Reasoning%20in%20Text-based%20VQA.md)
+![Example Image](framework.png)
 
 ## Repository Setup
 
