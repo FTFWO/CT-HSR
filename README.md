@@ -27,8 +27,8 @@ data
 ├── 1600-400-20
 
 ```
-We recommend using the following AzCopy command to download. AzCopy executable tools can be downloaded here. 
-https://tapvqacaption.blob.core.windows.net/data/data
+We recommend using the following AzCopy command to download. AzCopy executable tools can be downloaded [here](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10?tabs=dnf#download-azcopy). 
+[TextVQA/Caps/STVQA Data (~62G).](https://tapvqacaption.blob.core.windows.net/data/data)
 ```
 path/to/azcopy copy <folder-link> <target-address> --resursive
 
