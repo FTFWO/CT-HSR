@@ -15,13 +15,15 @@ pip install -r requirements.txt
 ```
 ### Data
 
-graph TD;
-    TAG --> data;
-    data --> imdb;
-    data --> detectron;
-    data --> feat_resx;
-    data --> "1600-400-20";
-    data --> ocr_feat_resx;
-    data --> feat_resx;
-    data --> m4c_vocabs;
-    data --> original_dl;
+```
+data
+├── detectron
+├── dict
+├── feat_resx
+├── imdb
+├── m4c_vocabs
+├── ocr_feat_resx
+├── original_dl
+├── 1600-400-20
+
+```
