@@ -14,4 +14,3 @@ cd HSRN
 pip install -r requirements.txt
 ```
 
-### Install pytorch
