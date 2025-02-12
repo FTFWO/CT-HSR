@@ -35,3 +35,5 @@ path/to/azcopy copy <folder-link> <target-address> --resursive
 # for example, downloading TextVQA/Caps/STVQA Data
 path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local_path>/CT-HSR/data --recursive
 ```
+
+### Training and Evaluation
