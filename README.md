@@ -10,7 +10,7 @@
 conda create -n CT-HSR_env python=3.8
 conda activate CT-HSR
 git clone https://github.com/FTFWO/CT-HSR
-cd HSRN
+cd CT-HSR
 pip install -r requirements.txt
 ```
 ### Data
