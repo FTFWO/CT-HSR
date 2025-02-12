@@ -33,5 +33,5 @@ We recommend using the following AzCopy command to download. AzCopy executable t
 path/to/azcopy copy <folder-link> <target-address> --resursive
 
 # for example, downloading TextVQA/Caps/STVQA Data
-path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local_path>/TWA/data --recursive
+path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local_path>/CT-HSR/data --recursive
 ```
