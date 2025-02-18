@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=$1 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --pretrain --seed $2 --config configs/vqa/m4c_textvqa/pretrain.yml --save_dir save/$3 training_parameters.data_parallel true
+CUDA_VISIBLE_DEVICES=$1 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --pretrain --seed $2 --config configs/vqa/m4c_textvqa/pretrain.yml --save_dir save/$3
