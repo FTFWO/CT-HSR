@@ -54,5 +54,5 @@ CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --
 CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type inference --evalai_inference 1 --resume_file save/$finetuning_dir/best.ckpt
 ```
 
-Vision-Language Pre-training Model
+##Vision-Language Pre-training Model
 In our work, we choose LXMERT for vision-language interaction due to its dual-stream architecture and rich pre-training tasks, with its visual features extracted from region features using Faster R-CNN. We also tried some other VLP models, such as VILBERT, VL-BERT, UNITER, etc., but the results were not satisfactory. Researchers can continue to explore more suitable VLP models or other approaches to improve the alignment between questions and visual objects, thereby enhancing the performance of TextVQA models.
