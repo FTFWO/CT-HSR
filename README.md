@@ -37,19 +37,19 @@ path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local
 ```
 
 ### Training and Evaluation
-#pre-training
+pre-training
 ```
 bash scripts/pretrain_textvqa.sh 0 seed pretain_textvqa
 ```
-#Fine-tuning:
+Fine-tuning:
 ```
 bash scripts/finetuning_textvqa.sh 0 seed pretain_textvqa finetuning_textvqa
 ```
 Evaluate the model, run the code under main folder. Set up val or test set by --run_type
 ```
 # for val evaluation
-python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type val --resume_file save/finetuning/best.ckpt
-bash scripts/val_textvqa.sh "save_dir" 
+CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type val --resume_file save/$finetuning_dir/best.ckpt
+ 
 # for test inference 
-python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type inference --evalai_inference 1 --resume_file save/finetuned/best.ckpt
+CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type inference --evalai_inference 1 --resume_file save/$finetuning_dir/best.ckpt
 ```
