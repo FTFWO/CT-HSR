@@ -56,3 +56,8 @@ CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --
 
 ### Vision-Language Pre-training Model
 In our work, we choose LXMERT for vision-language interaction due to its dual-stream architecture and rich pre-training tasks, with its visual features extracted from region features using Faster R-CNN. We also tried some other VLP models, such as VILBERT, VL-BERT, UNITER, etc., but the results were not satisfactory. Researchers can continue to explore more suitable VLP models or other approaches to improve the alignment between questions and visual objects, thereby enhancing the performance of TextVQA models.
+
+### Credits
+The project is built based on the following repository:
+ • TAP: Text-Aware Pre-training for Text-VQA and Text-Caption[https://github.com/facebookresearch/mmf/]. 
+ • MMF: A multimodal framework for vision and language research[https://github.com/microsoft/TAP/].
