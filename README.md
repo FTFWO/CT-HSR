@@ -37,15 +37,15 @@ path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local
 ```
 
 ### Training and Evaluation
-pre-training
+1.Pre-training
 ```
 bash scripts/pretrain_textvqa.sh 0 seed pretain_textvqa
 ```
-Fine-tuning:
+2.Fine-tuning:
 ```
 bash scripts/finetuning_textvqa.sh 0 seed pretain_textvqa finetuning_textvqa
 ```
-Evaluate the model, run the code under main folder. Set up val or test set by --run_type
+3.Evaluate the model, run the code under main folder. Set up val or test set by --run_type
 ```
 # for val evaluation
 CUDA_VISIBLE_DEVICES=0 python tools/run.py --tasks vqa --datasets m4c_textvqa --model CT-HSR --config configs/vqa/m4c_textvqa/refine.yml --save_dir save/finetuning --run_type val --resume_file save/$finetuning_dir/best.ckpt
