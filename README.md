@@ -37,3 +37,8 @@ path/to/azcopy copy https://tapvqacaption.blob.core.windows.net/data/data <local
 ```
 
 ### Training and Evaluation
+pretrain
+```
+bash scripts/pretrain_textvqa.sh 0 seed pretain_textvqa
+```
+
