@@ -8,7 +8,7 @@
 
 ```
 conda create -n CT-HSR_env python=3.8
-conda activate CT-HSR
+conda activate CT-HSR_env
 git clone https://github.com/FTFWO/CT-HSR
 cd CT-HSR
 pip install -r requirements.txt
