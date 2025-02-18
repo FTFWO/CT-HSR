@@ -59,5 +59,7 @@ In our work, we choose LXMERT for vision-language interaction due to its dual-st
 
 ### Credits
 The project is built based on the following repository:
+
  • TAP: Text-Aware Pre-training for Text-VQA and Text-Caption[https://github.com/facebookresearch/mmf/]. 
+ 
  • MMF: A multimodal framework for vision and language research[https://github.com/microsoft/TAP/].
